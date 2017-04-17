@@ -9,5 +9,11 @@ Rook::~Rook()
 
 bool Rook::checkMovement(int prow, char pcolumn)
 {
-
+	if ((_row != prow && _column == pcolumn)
+		|| (_row == prow && _column != pcolumn))
+	{
+		return true;
+	}
+	else
+		return false;
 }
