@@ -10,6 +10,10 @@ public:
 
 	~Chessboard();
 
+	void Start();
+
+	void printBoard();
+
 	void movePiece(bool is_white, int prow, char pcolumn, int pNewRow, char pNewColumn);
 
 private:

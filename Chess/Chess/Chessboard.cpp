@@ -45,6 +45,17 @@ Chessboard::Chessboard()
 
 Chessboard::~Chessboard()
 {
+	delete[] _pieces;
+}
+
+void Chessboard::Start()
+{
+
+}
+
+void Chessboard::printBoard()
+{
+
 }
 
 void Chessboard::movePiece(bool is_white, int prow, char pcolumn, int pNewRow, char pNewColumn)
